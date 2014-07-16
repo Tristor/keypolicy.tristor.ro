@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tyler Duzan's PGP Keysigning Policy'</title>
+  <meta name="description" content="This is a copy of my PGP keysigning policy.">
+  <meta name="author" content="tristor@gmail.com">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <p>
+      When signing PGP/GPG keys, you are stating that you’ve inserted a level of trust with the owner of the key. This trust is necessary for the OpenPGP ecosystem, as OpenPGP is a distributed system that does not rely on a central authority, such as Verisign. Thus, the more signatures that exist in a single key, the more that key can be trusted. The more keys that contain signatures and sign each others keys, the larger the Web of Trust.
+  </p>
+  <p>
+      It’s important to understand that signing each others PGP/GPG keys means you trust them. However, it’s possible that we’ve gotten a little over zealous in the process. Really, is it necessary to check identification, even if you already know the individual? Of course, it’s important to make sure that you have the right key in your possession, so exchanging fingerprints is probably a good idea, but if it’s my brother or boss, is verifying their identification really that important?
+  </p>
+  <p>
+      One thing to remember, is that you are only verifying identity, not identification. It’s not critical knowing whether or not the person can drive or travel out of the country. It’s only important to verify their identity. Of course, if you don’t know them, then using some government-issued identification is important.
+  </p>
+  <p>
+      When using GnuPG to sign someone’s key, you will be asked how careful you have checked their identity. The responses are as follows:
+  </p>
+  <ol>
+      <li>I will not answer. (default)
+      </li>
+      <li>I have not checked at all.
+      </li>
+      <li>I have done casual checking.
+      </li>
+      <li>I have done very careful checking.
+      </li>
+  </ol>
+  <p>
+      Personally, I will only sign keys if I have done at least casual checking or very careful checking. I will not sign a key if I have not verified the ownership of the key. This weakens the Web of Trust. With that said, if you’re interested in receiving a PGP/GPG signature from me, you can take one of the following steps below, and I will sign your key:
+  </p>
+  <h1 id="i_have_done_very_careful_checking">
+      I have done very careful checking.
+  </h1>
+  <ul>
+      <li>I will sign your key if we meet in person and exchange 2 forms of ID, including at least one government-issued identification and key fingerprints if we don’t know each other.
+      </li>
+      <li>I will sign your key if we cannot meet in person but someone I ultimately trust notifies me that you want a signature, and gives me your key id verbally or in person.
+      </li>
+      <li>I will sign your key without meeting in person and without exchanging identification and key fingerprints if I know you very well personally (family, known you for more than 5 years, etc.)
+      </li>
+  </ul>
+  <h1 id="i_have_done_casual_checking">
+      I have done casual checking.
+  </h1>
+  <ol>
+      <li>Authentication by sending my a scan of your United States passport or driver license
+      </li>
+          <ul>
+              <li>Make a color scan of your personal United States passport or driver’s license.
+              </li>
+              <li>On the color scan, hand write your email address and your key id.
+              </li>
+              <li>Compose an email with the resulting document, and digitally sign it with your key.
+              </li>
+              <li>Send the email to: tristor@gmail.com
+              </li>
+          </ul>
+          <p>
+              Of course, sending me a copy of your passport or driver’s license could have some identity fraud ramifications. I am certainly not interested in committing identity fraud, but to be assured, you can black out your address, social security number, birthday, passport number and/or driver’s license number. Basically, I only need enough information to identify the the document and your name. Because we aren’t meeting face-to-face, the photo isn’t necessary. I’ll remain in contact with you, if too much of the document has been removed, or the scan is unclear, or whatever. Please encrypt the mail and the scans so I am the only one who sees the information. I will securely shred, both physically and digitally, any unencrypted copies, should they be needed.
+          </p>
+      <li>Authentication by video-conference and challenge response.
+      </li>
+      <li style="list-style: none">
+          <ul>
+              <li>Send me a signed and encrypted email using the key you want signed from the email associated with the uid you want signed.
+              </li>
+              <li>In the email include a code-word and a username for either Google Hangouts or Skype.
+              </li>
+              <li>I will reply with an email signed and encrypted to the public key and uid with an opposing code-word and my Google Hangouts or Skype username.
+              </li>
+              <li>I will connect to you on Skype or Google Hangouts shortly thereafter where you will verbally state the code-word I sent you. I will then verbally state the code-word you sent me.
+              </li>
+              <li>You will verbally confirm the full fingerprint of your key.
+              </li>
+          </ul>
+      </li>
+  </ol>
+  <p>
+      I greatly prefer meeting face-to-face for keysignings, so if at all possible I would rather arrange that.
+  </p>
+  <p>
+      This policy was based heavily upon Aaron Toponce’s very good keysigning policy at http://pthree.org/my-pgp-key-signing-policy/
+  </p>
+  
+</body>
+</html>
